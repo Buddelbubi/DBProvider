@@ -1,0 +1,24 @@
+2025-12-02 10:38:19.265305+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabelle "TEST" besteht bereits
+Table "TEST" already exists; SQL statement:
+CREATE TABLE test (id int) [42101-224]
+2025-12-02 10:38:53.015942+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabelle "TEST" besteht bereits
+Table "TEST" already exists; SQL statement:
+CREATE TABLE test (id int) [42101-224]
+2025-12-02 10:41:17.533130+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "CREATE TABLE Persons (    PersonID int,    LastName varchar(255),    FirstName varchar(255),[*])"; erwartet "identifier"
+Syntax error in SQL statement "CREATE TABLE Persons (    PersonID int,    LastName varchar(255),    FirstName varchar(255),[*])"; expected "identifier"; SQL statement:
+CREATE TABLE Persons (    PersonID int,    LastName varchar(255),    FirstName varchar(255),) [42001-224]
+2025-12-02 10:41:31.810953+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabelle "PERSONS" besteht bereits
+Table "PERSONS" already exists; SQL statement:
+CREATE TABLE Persons (    PersonID int,    LastName varchar(255),    FirstName varchar(255)) [42101-224]
+2025-12-02 10:41:55.861268+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabelle "PERSONS" besteht bereits
+Table "PERSONS" already exists; SQL statement:
+CREATE TABLE Persons (    PersonID int,    LastName varchar(255),    FirstName varchar(255),    Address varchar(255),    City varchar(255)) [42101-224]
+2025-12-02 10:42:26.323118+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabelle "PERSONS" besteht bereits
+Table "PERSONS" already exists; SQL statement:
+CREATE TABLE Persons (    PersonID int,    LastName varchar(255),    FirstName varchar(255),    Address varchar(255),    City varchar(255)) [42101-224]
