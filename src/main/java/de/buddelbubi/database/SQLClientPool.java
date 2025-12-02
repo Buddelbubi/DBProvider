@@ -46,6 +46,7 @@ public abstract class SQLClientPool extends DBClient {
                 }
             }
         } catch (Exception e) {
+            e.printStackTrace();
             try {
                 if (con != null) {
                     con.close();
@@ -72,6 +73,7 @@ public abstract class SQLClientPool extends DBClient {
                 return stmt.executeUpdate();
             }
         } catch (Exception e) {
+            e.printStackTrace();
             try {
                 if (con != null) {
                     con.close();
@@ -109,6 +111,7 @@ public abstract class SQLClientPool extends DBClient {
         try {
             return this.offer(this.createNew());
         } catch (SQLException e) {
+            e.printStackTrace();
             return false;
         }
     }

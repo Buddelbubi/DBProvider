@@ -13,11 +13,19 @@ public class H2Client extends SQLClientPool {
 
     public H2Client(String url) {
         super(url);
-        this.offer(1);
+        if(this.offer(1) != 0) throw new RuntimeException("Could not use h2 database!");
     }
 
     @Override
     protected Connection createNew() throws SQLException {
         return DriverManager.getConnection(this.url);
+    }
+
+    static {
+        try {
+            Class.forName("org.h2.Driver");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
