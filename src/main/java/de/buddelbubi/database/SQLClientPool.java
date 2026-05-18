@@ -140,15 +140,4 @@ public abstract class SQLClientPool extends DBClient {
             throw new RuntimeException(e);
         }
     }
-
-    /**
-     * Loads the JDBC driver
-     */
-    static {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 }
